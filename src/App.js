@@ -3,9 +3,10 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 import './App.css';
+import Header from "./components/Header";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <>
           <Switch>
             <Route path="/" exact>
-              <h1>This is the HomePage</h1>
+              <Header />
             </Route>
           </Switch>
         </>
@@ -24,3 +25,5 @@ function App() {
 }
 
 export default App;
+
+
