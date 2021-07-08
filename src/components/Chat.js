@@ -24,9 +24,11 @@ function Chat() {
             .orderBy("timestamp", "asc")
     );
 
-// useEffect(() => {
-//     chatRef?.current?.scrollIntoView();
-// }, [roomId, roomLoading]);
+    useEffect(() => {
+        chatRef?.current?.scrollIntoView({
+            behavior: "smooth",
+        });
+    }, [roomId, roomLoading]);
 
 return (
     <ChatContainer>
@@ -65,7 +67,7 @@ return (
         </div>
 
         <ChatInput
-            // chatRef={chatRef}
+            chatRef={chatRef}
             channelName={roomDetails.data().name}
             channelId={roomId}
         />

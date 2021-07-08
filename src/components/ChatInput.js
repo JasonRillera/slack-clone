@@ -26,10 +26,10 @@ function ChatInput({ channelName, channelId, chatRef }) {
     //     userImage: user.photoURL,
         });
 
-    //     chatRef.current.scrollIntoView({
-    //     behavior: "smooth",
-    //     block: "nearest",
-    //     });
+        chatRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        });
         setInput("");
     };
     return (
