@@ -1,5 +1,4 @@
 import React from "react";
-
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import CreateIcon from "@material-ui/icons/Create";
 import SidebarOption from "./SidebarOption";
@@ -14,12 +13,12 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import { auth, db } from "../firebase";
-// import { useAuthState } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import styled from "styled-components";
 
 function Sidebar() {
-    // const [user] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const [channels] = useCollection(db.collection("rooms"));
 
 return (
@@ -29,8 +28,8 @@ return (
             <h2>REALERA HQ</h2>
             <h3>
                 <FiberManualRecordIcon />
-                Jason Rillera
-                {/* {user?.displayName} */}
+                {/* Jason Rillera */}
+                {user?.displayName}
             </h3>
             </SidebarInfo>
             <CreateIcon />
