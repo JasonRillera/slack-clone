@@ -1,7 +1,10 @@
-# Slack Clone
+# Slack Clone | [Live Demo](https://slack-clone-47a3d.web.app)
 
-Business Messaging App using : React JS, Redux, Styled Components, & Firebase
+Business Messaging App using:
 
-![Slack Medium Gif](https://media.giphy.com/media/hz0VHWJFR5Ab6YArLV/giphy.gif)
+- React JS
+- Redux
+- Styled Components
+- Firebase
 
-## [Live Demo](https://slack-clone-47a3d.web.app)
+![Slack Medium Gif](SlackGif.gif)
